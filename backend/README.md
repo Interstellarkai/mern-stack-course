@@ -1,4 +1,4 @@
-# Notes for BackEnd
+# README
 ## server.js 
 - Configures an Express Server
 
