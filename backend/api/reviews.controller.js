@@ -29,7 +29,7 @@ export default class ReviewsController {
             const text = req.body.text
             const date = new Date() 
 
-            const ReviewResponse = await ReviewsDAO.UpdateReview(
+            const ReviewResponse = await ReviewsDAO.updateReview(
                 reviewId, 
                 req.body.user_id,
                 text, 
@@ -56,7 +56,7 @@ export default class ReviewsController {
     static async apiDeleteReview(req, res, next) {
         // check that the user id is the same person who wrote the review 
         try{
-            const reviewId = req.query._id
+            const reviewId = req.query.id
             const userId = req.body.user_id
             console.log(reviewId)
 
