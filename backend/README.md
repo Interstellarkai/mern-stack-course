@@ -18,8 +18,9 @@
 
 ### Controller Files 
 - API Calls and return the result of those calls 
+- What the user can do (uses methods from DAO) 
 
 ## dao (Data Access Objects) Directory 
-- query the database directly
+- query the database directly (Get data from DB directly) 
 - consists of various getter methods for restaurants
 - add, update, delete for the reviews 
