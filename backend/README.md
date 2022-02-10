@@ -10,7 +10,16 @@
 - Set the uri of data - Do so by going back to MongoDB to get the uri 
 
 ## api (directory)
-### restaurants.node.js
+### restaurants.route.js
 - Import Express
 - Get access to the Express Router
 - Create the routes that people can go to
+
+
+### Controller Files 
+- API Calls and return the result of those calls 
+
+## dao (Data Access Objects) Directory 
+- query the database directly
+- consists of various getter methods for restaurants
+- add, update, delete for the reviews 
