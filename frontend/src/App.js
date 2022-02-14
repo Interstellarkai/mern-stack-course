@@ -1,13 +1,15 @@
 // this page is gonna have a navbar (link to the other components)
 // and the user can switch between different routes
 import React from "react";
-import { Routes , Route, Link } from "react-router-dom"; // used to create different url routes 
+import { Switch , Route, Link } from "react-router-dom"; // used to create different url routes 
 import "bootstrap/dist/css/bootstrap.min.css"; // used to style 
 
 import AddReview from "./components/add-review";
 import Login from "./components/login";
 import Restaurant from "./components/restaurants";
 import RestaurantsList from "./components/restaurants-list";
+
+
 
 // navbar from bootstrap documentation
 function App() {
@@ -22,7 +24,7 @@ function App() {
   }
 
   async function logout() {
-    setUser(null)
+    setUser(null);
   }
 
   return (
@@ -38,7 +40,7 @@ function App() {
             </Link>
           </li>
           <li className="nav-item" >
-            {user ? (
+            { user ? (
               <button onClick={logout} className="nav-link" style={{ cursor: 'spointer' }}>
                 Logout {user.name}
               </button>
@@ -47,13 +49,12 @@ function App() {
                 Login
               </Link>
             )}
-
           </li>
         </div>
       </nav>
 
       <div className="container mt-3">
-        <Routes>
+        <Switch>
           <Route exact path={["/", "/restaurants"]} component={RestaurantsList} />
           <Route
             path="/restaurants/:id/review"
@@ -73,7 +74,7 @@ function App() {
               <Login {...props} login={login} />
             )}
           />
-        </Routes>
+        </Switch>
       </div>
     </div>
   );
