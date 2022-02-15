@@ -10,7 +10,7 @@ class RestaurantDataService {
 
     // get a specific id 
     get(id) {
-        return http.get(`/?id=${id}`);
+        return http.get(`/restaurant/?id=${id}`);
     }
 
     // find take a query (search term), by - searching by and what page number we want
