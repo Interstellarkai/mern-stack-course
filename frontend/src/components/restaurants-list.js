@@ -94,7 +94,8 @@ const RestaurantsList = props => {
     if (searchCuisine === "All Cuisines") {
       refreshList();
     } else {
-      find(searchCuisine, "cuisine")
+      find(searchCuisine, "cuisine");
+      refreshList();
     }
   };
   // from bootstrap
@@ -142,7 +143,7 @@ const RestaurantsList = props => {
           <select onChange={onChangeSearchCuisine}>
             {cuisines.map(cuisine => {
               return (
-                <option value={cuisine}> {cuisine.substr(0, 20)} </option>
+                <option value={cuisine}> {cuisine.substring(0, 20)} </option>
               )
             })}
           </select>

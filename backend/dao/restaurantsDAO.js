@@ -37,7 +37,7 @@ export default class RestaurantsDAO {
                 query = { $text: { $search: filters["name"] } } // text search, search any word in that text
             }
             else if ("cuisine" in filters) {
-                query = { "cusine": { $eq: filters["cuisine"] } } // if cuisine in db equals to the cuisine passed in, search for cuisine
+                query = { "cuisine": { $eq: filters["cuisine"] } } // if cuisine in db equals to the cuisine passed in, search for cuisine
             }
             else if ("zipcode" in filters) {
                 query = { "address.zipcode": { $eq: filters["zipcode"] } }

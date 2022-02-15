@@ -5,17 +5,17 @@ class RestaurantDataService {
     // default page number = 0
     // get request of the url (added to the end of the base url)
     getAll(page = 0) {
-        return http.get(`restaurants?page=${page}`);
+        return http.get(`/?page=${page}`);
     }
 
     // get a specific id 
     get(id) {
-        return http.get(`/restaurant?id=${id}`);
+        return http.get(`/?id=${id}`);
     }
 
     // find take a query (search term), by - searching by and what page number we want
     find(query, by = "name", page = 0) {
-        return http.get(`restaurants?${by}=${query}&page=${page}`);
+        return http.get(`/?${by}=${query}&page=${page}`);
     }
     
     createReview(data) {
