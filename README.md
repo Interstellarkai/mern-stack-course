@@ -10,4 +10,4 @@ MongoDB - Database \
 NodeJS and Express - Backend Server \
 ReactJS - FrontEnd 
 
-WebApp is currently hosted locally only
+WebApp is currently hosted locally only. Currently working on hosting it on MongoDB Realm
