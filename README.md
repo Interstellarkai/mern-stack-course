@@ -24,10 +24,15 @@ WebApp is currently hosted locally only. Currently working on hosting it on Mong
 | Relational     | MongoDB |
 | ----------- | ----------- |
 | Table     | Collection       |
-| Row   | Document        |
-| Index    | Index       |
-| Row   | Document        |
-| Join     | $lookup       |
+| ----------- | ----------- |
+| Row       | Document        |
+| ----------- | ----------- |
+| Index     | Index       |
+| ----------- | ----------- |
+| Row       | Document        |
+| ----------- | ----------- |
+| Join      | $lookup       |
+| ----------- | ----------- |
 | Foreign Key   | Reference        |
 
 ## Directories 
