@@ -20,7 +20,7 @@ WebApp is currently hosted locally only. Currently working on hosting it on Mong
 
 ### About MongoDB 
 - Stores data in BSON (Binary JSON) format. 
-- Supports many data types 
+- Supports many data types \
 | Relational | MongoDB |
 | --- | --- |
 | Database | Database |
