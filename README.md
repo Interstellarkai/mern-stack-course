@@ -9,9 +9,9 @@ I have learnt how to use the MERN stack by building a Restaurant Reviews Web App
 - Using the following resource from FreeCodeCamp \
 https://www.youtube.com/watch?v=mrHNSanmqQ4&ab_channel=freeCodeCamp.org
 
-## NOTES 
+# NOTES 
 
-### MERN Stack 
+## MERN Stack 
 MongoDB - Database \
 NodeJS and Express - Backend Server \
 ReactJS - FrontEnd 
@@ -21,18 +21,19 @@ WebApp is currently hosted locally only. Currently working on hosting it on Mong
 ### About MongoDB 
 - Stores data in BSON (Binary JSON) format. 
 - Supports many data types 
-| Relational     | MongoDB |
-| ----------- | ----------- |
-| Table     | Collection       |
-| Row   | Document        |
-| Index    | Index       |
-| Row   | Document        |
-| Join     | $lookup       |
-| Foreign Key   | Reference        |
 
-### Directories 
+|  Relational |   MongoDB  |
+|:-----------:|:----------:|
+| Database    | Database   |
+| Table       | Collection |
+| Row         | Document   |
+| Index       | Index      |
+| Join        | $lookup    |
+| Foreign Key | Reference  |
 
-1. Backend 
+## Directories 
+
+### 1. Backend 
 Application Programming Interace (API)
 - Route Files: Creates the routes that people can go to 
 - Controller Files: Handles the API Calls 
@@ -52,7 +53,7 @@ index.js
 - Stores the environment variables 
 
 
-2. Frontend 
+### 2. Frontend 
 The frontend of this web application takes reference to Bootstrap and takes most of the html/css code from bootstrap documentation 
 
 Services 
